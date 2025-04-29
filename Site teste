@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barak Store - Soluções em [Seu Nicho]</title>
+    <style>
+        :root {
+            --primary-color: #E1306C; /* Cor do Instagram - pode alterar */
+            --secondary-color: #405DE6;
+            --text-color: #333333;
+            --light-bg: #f9f9f9;
+            --white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--white);
+            margin-bottom: 1rem;
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 3rem 0;
+        }
+        
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            background-color: var(--light-bg);
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        /* About Section */
+        .about {
+            background-color: var(--white);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        
+        /* Services/Products */
+        .services {
+            background-color: var(--light-bg);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .price {
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            color: var(--secondary-color);
+        }
+        
+        /* Testimonials */
+        .testimonials .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .client-name {
+            font-weight: bold;
+        }
+        
+        /* Contact */
+        .contact {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .contact a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .social-links {
+            margin-top: 2rem;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--text-color);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Substitua pela URL da sua foto de perfil -->
+            <img src="SUA-FOTO.jpg" alt="Seu Nome" class="profile-pic">
+            <h1>@SeuInstagram</h1>
+            <p>Especialista em [Seu Nicho]</p>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Transforme seu [problema/resultsado desejado] com nossas soluções!</h1>
+            <p>Descrição impactante sobre o que você oferece e como pode ajudar seu cliente. Destaque os principais benefícios em 2-3 frases.</p>
+            <a href="#contact" class="cta-button">Fale comigo agora!</a>
+        </div>
+    </section>
+    
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">Quem Sou Eu</h2>
+            <p>Conte sua história de forma autêntica. Explique sua jornada, credenciais e por que você é a pessoa certa para ajudar seu cliente. Mostre personalidade e construa confiança.</p>
+            <p>Destaque conquistas relevantes, número de clientes atendidos, anos de experiência ou qualquer dado que comprove sua autoridade no assunto.</p>
+        </div>
+    </section>
+    
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">O Que Ofereço</h2>
+            <div class="services-grid">
+                <!-- Serviço/Produto 1 -->
+                <div class="service-card">
+                    <h3>Nome do Serviço/Produto 1</h3>
+                    <p>Descrição detalhada do que está incluído, benefícios e resultados esperados.</p>
+                    <div class="price">R$XXX,XX</div>
+                    <a href="#contact" class="cta-button">Quero este!</a>
+                </div>
+                
+                <!-- Serviço/Produto 2 -->
+                <div class="service-card">
+                    <h3>Nome do Serviço/Produto 2</h3>
+                    <p>Descrição detalhada do que está incluído, benefícios e resultados esperados.</p>
+                    <div class="price">R$XXX,XX</div>
+                    <a href="#contact" class="cta-button">Quero este!</a>
+                </div>
+                
+                <!-- Serviço/Produto 3 -->
+                <div class="service-card">
+                    <h3>Nome do Serviço/Produto 3</h3>
+                    <p>Descrição detalhada do que está incluído, benefícios e resultados esperados.</p>
+                    <div class="price">R$XXX,XX</div>
+                    <a href="#contact" class="cta-button">Quero este!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O Que Meus Clientes Dizem</h2>
+            <div class="testimonial-grid">
+                <!-- Depoimento 1 -->
+                <div class="testimonial-card">
+                    <p>"Depoimento real de um cliente satisfeito. Descreva os resultados que ele obteve e como seu produto/serviço ajudou."</p>
+                    <div class="client-name">- Nome do Cliente</div>
+                </div>
+                
+                <!-- Depoimento 2 -->
+                <div class="testimonial-card">
+                    <p>"Outro depoimento autêntico. Se possível, inclua resultados mensuráveis ou transformações significativas."</p>
+                    <div class="client-name">- Nome do Cliente</div>
+                </div>
+                
+                <!-- Depoimento 3 -->
+                <div class="testimonial-card">
+                    <p>"Mais um depoimento para aumentar a prova social. Pode ser mais curto, mas igualmente impactante."</p>
+                    <div class="client-name">- Nome do Cliente</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Vamos Conversar?</h2>
+            <p>Pronto para transformar seu [resultado desejado]? Entre em contato agora mesmo!</p>
+            <p>Email: <a href="mailto:seuemail@provedor.com">seuemail@provedor.com</a></p>
+            <p>WhatsApp: <a href="https://wa.me/5511999999999">(11) 99999-9999</a></p>
+            
+            <div class="social-links">
+                <a href="https://instagram.com/seuusuario" target="_blank">📷</a>
+                <a href="https://facebook.com/seuusuario" target="_blank">👍</a>
+                <a href="https://linkedin.com/in/seuusuario" target="_blank">💼</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 Seu Nome. Todos os direitos reservados.</p>
+            <p>Página criada para @SeuInstagram</p>
+        </div>
+    </footer>
+</body>
+</html>
